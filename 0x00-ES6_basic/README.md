@@ -1,1 +1,1 @@
-#This repository contains projects for the ALX backend specializations curriculum.
+#This repository contains projects for learning ES6 basics
