@@ -1,0 +1,1 @@
+#This repository contains projects for the ALX backend specializations curriculum.
