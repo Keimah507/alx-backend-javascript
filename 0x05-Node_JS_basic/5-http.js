@@ -3,11 +3,10 @@
 const http = require('http');
 const countStudents = require('./3-read_file_async');
 
-const host = 'localhost';
 const port = 1245;
 
-const app = http.createServer(async (req, res) {
-	res.statusCode= 200;
+const app = http.createServer(async (req, res) => {
+	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/plain');
 	let url = req.url;
 	if (url === '/') {

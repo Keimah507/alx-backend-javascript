@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const countstudents = function(path) {
+const countStudents = function(path) {
 	const promise = (res, rej) => {
 		fs.readFile(path, 'utf8', (error, data) => {
 			if (error) rej(Error('Cannot load the database'));
@@ -28,7 +28,7 @@ const countstudents = function(path) {
 					subjects[key].length
 				}. List: ${subjects[key].join(', ')}`;
 				console.log(message);
-				messages.push(messsage);
+				messages.push(message);
 			}
 			res(messages);
 		});
