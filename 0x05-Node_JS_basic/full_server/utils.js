@@ -16,5 +16,5 @@ const readDatabase = function(path) {
 			});
 			resolve(students);
 		});
-	});
+	};
 }

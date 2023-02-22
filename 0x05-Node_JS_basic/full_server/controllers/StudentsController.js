@@ -14,8 +14,7 @@ class StudentsController {
 					const numStudents = students[field].length;
 					const studentNames = students[field].join(', ');
 					return`Number of students in ${field.toUpperCase()}: ${numStudents}. List: ${studentNames}`;
-				}).join('<br>')
-);
+				}).join('<br>');
 		} catch (err) {
 			res.status(500).send(`Cannot load the database: ${err.message}`);
 		}

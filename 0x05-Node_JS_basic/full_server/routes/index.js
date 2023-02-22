@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
+const StudentController = require('./StudentController.js');
+const AppController = require('./AppController.js');
 const express = require('express');
 const app = express();
 
