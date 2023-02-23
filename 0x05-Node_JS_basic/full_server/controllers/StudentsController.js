@@ -6,7 +6,7 @@ const readDatabase = require('/utils.js');
 class StudentsController {
 	static async getAllStudents(request, response) {
 		try {
-			const students = await readDatabase('./students.csv');
+			const students = await readDatabase(path);
 			const fields = Object.keys(students).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 
 			res.status(200).send(`This is the list of our students`) +
@@ -29,7 +29,7 @@ class StudentsController {
 		}
 
 		try {
-			const students = await readDatabase('./students.csv');
+			const students = await readDatabase(path);
 			const studentNames = student[major].join(', ');
 
 			res.status(200).send(`List: ${studentNames}`);

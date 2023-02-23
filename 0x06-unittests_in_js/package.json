@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "test": "mocha"
+  },
+  "name": "0x06-unittests_in_js",
+  "description": "",
+  "version": "1.0.0",
+  "main": "0-calcul.js",
+  "repository": {
+    "type": "git",
+    "url": "alx-backend-javascript"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "sinon": "^15.0.1"
+  }
+}
