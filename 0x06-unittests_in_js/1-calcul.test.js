@@ -1,4 +1,5 @@
 #!/usr/bin/node
+'use strict';
 const calculateNumber = require("./1-calcul");
 const assert = require("assert");
 
