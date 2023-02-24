@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
 const calculateNumber = (a, b) => {
     const roundedA = Math.round(a);
     const roundedB = Math.round(b);
