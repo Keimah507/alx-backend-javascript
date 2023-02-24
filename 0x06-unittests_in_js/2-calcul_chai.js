@@ -1,17 +1,18 @@
-#!/usr/bin/node
-
 calculateNumber = (type, a, b) => {
+    const roundedA = Math.round(a);
+    const roundedB = Math.round(b);
+
     if (type == 'SUM') {
-        Math.round(a) + Math.round(b);
+        return roundedA + roundedB;
     }
     else if (type == 'SUBTRACT') {
-        Math.round(a) - Math.round(b);
+        return roundedA - roundedB;
     }
     else if (type == 'DIVIDE') {
-        if (Math.round(b) == 0) {
+        if (roundedB == 0) {
             return ('Error');
         }
-        Math.round(a) / Math.round(b);
+        return roundedA / roundedB;
     }
 }
 module.exports = calculateNumber;

@@ -1,5 +1,3 @@
-#!/usr/bin/node
-'use strict';
 const calculateNumber = require("./1-calcul");
 const assert = require("assert");
 
@@ -20,5 +18,6 @@ describe("calculateNumber", function(){
         assert.equal(calculateNumber('DIVIDE', 4, 2), 2);
         assert.equal(calculateNumber('DIVIDE', 9.5, 4.5), 2);
         assert.equal(calculateNumber('DIVIDE', 8.7, 2.5), 3);
+        assert.equal(calculateNumber('DIVIDE', 1, 0), 'Error');
     });
 });

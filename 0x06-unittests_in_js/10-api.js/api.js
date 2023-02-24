@@ -23,7 +23,7 @@ app.get('/available_payments', (request, response) => {
 app.use(express.json());
 
 app.post('/login', (request, response) => {
-    const { userName} = request.body;
+    const userName = request.body;
     response.send(`Welcome ${userName}`);
 });
 

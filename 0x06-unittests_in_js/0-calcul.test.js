@@ -1,4 +1,3 @@
-#!/usr/bin/node
 const calculateNumber = require("./0-calcul.js")
 const assert = require("assert")
 
